@@ -1,6 +1,8 @@
 FROM haskell:latest
 MAINTAINER yufrice <yufyufrice@gmail.com>
 
-RUN stack install yesod-bin hlint --install-ghc
+RUN cabal update
+RUN cabal install yesod-platform yesod-bin
+RUN cabal hlint
 
 WORKDIR /
