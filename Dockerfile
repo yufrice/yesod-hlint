@@ -1,7 +1,7 @@
 FROM haskell:latest
 MAINTAINER yufrice <yufyufrice@gmail.com>
 
-ADD stack.yaml /root/.stack/global-project/config.yaml
+ADD stack.yaml /root/.stack/global-project/stack.yaml
 
 RUN stack upgrade
 RUN stack setup
