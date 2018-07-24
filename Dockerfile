@@ -1,5 +1,5 @@
-FROM haskell:latest
-MAINTAINER yufrice <yufyufrice@gmail.com>
+FROM haskell:8
+LABEL yufrice <yufyufrice@gmail.com>
 
 ENV STACK_ROOT=/stack-root
 COPY stack.yaml /root/.stack/global-project/stack.yaml
